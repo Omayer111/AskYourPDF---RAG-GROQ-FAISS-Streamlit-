@@ -42,8 +42,8 @@ doc-qna-RAG/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/doc-qna-RAG.git
-   cd doc-qna-RAG
+   git clone https://github.com/Omayer111/AskYourPDF---RAG-GROQ-FAISS-Streamlit-.git
+   cd AskYourPDF---RAG-GROQ-FAISS-Streamlit-
    ```
 
 2. **Install Dependencies**:
