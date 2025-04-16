@@ -91,7 +91,6 @@ doc-qna-RAG/
 
 
 ### Q&A Section
-*(Add a screenshot of the Q&A section here)*
 
 
 https://github.com/user-attachments/assets/9f7900a0-27e1-4ca8-a6b0-19cd4b681367
