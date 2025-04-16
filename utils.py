@@ -3,7 +3,18 @@ import numpy as np
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-import openai
+import os
+from dotenv import load_dotenv
+from groq import Groq
+
+
+load_dotenv()
+
+client = Groq(
+    api_key=os.environ.get("GROQ_API_KEY"),
+)
+
+
 
 
 embedder  = SentenceTransformer("all-MiniLM-L6-v2")
@@ -39,10 +50,17 @@ def search_index(query, chunks, index, top_k=5):
 def ask_llm(question, context):
     prompt = f"Answer the question based on the context provided.\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:"
     
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.3,
-        max_tokens=300
+    response = client.chat.completions.create(
+        messages=[
+            {
+                "role": "user",
+                "content": prompt,
+            }
+        ],
+        model="llama-3.3-70b-versatile",
+        stream=False,
     )
+    
+    # Adjust this based on the actual structure of the response
+    print(response)  # Debugging: Print the response to inspect its structure
     return response.choices[0].message.content
