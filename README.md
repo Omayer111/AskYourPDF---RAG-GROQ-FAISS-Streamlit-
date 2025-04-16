@@ -89,11 +89,19 @@ doc-qna-RAG/
 
 ## 🖥️ Screenshots
 
-### Dark Mode Interface
-*(Add a screenshot of the app interface here)*
 
 ### Q&A Section
 *(Add a screenshot of the Q&A section here)*
+
+
+https://github.com/user-attachments/assets/9f7900a0-27e1-4ca8-a6b0-19cd4b681367
+
+
+
+
+[BANGLADESH INVESTMENT SUMMIT 2025.pdf](https://file.mofa.gov.bd/media/6f16aa9a-6de9-46b7-b923-43a6c4b935a5/BANGLADESH%20INVESTMENT%20SUMMIT%202025.pdf)
+
+
 
 ---
 
